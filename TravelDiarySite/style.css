@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #111; color: white; }
+.story-screen {
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+}
+.cover { background-image: url('images/cover.jpg'); }
+.japan { background-image: url('images/japan.jpg'); }
+.italy { background-image: url('images/italy.jpg'); }
+.france { background-image: url('images/france.jpg'); }
+.memories { background-image: url('images/memories.jpg'); }
+.reflection { background-image: url('images/reflection.jpg'); }
+.ending { background-image: url('images/ending.jpg'); }
+.screen-content { max-width: 1200px; padding: 1rem; text-shadow: 0 2px 18px rgba(0,0,0,.45); }
+h1, h2, .subtitle { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; }
+h1, h2 { font-size: clamp(3rem, 4vw, 5rem); line-height: 1.05; margin: 0; }
+.section-title { font-size: clamp(2.6rem, 3.4vw, 4.2rem); }
+.subtitle { font-size: clamp(1.15rem, 1.5vw, 1.65rem); margin: 2.5rem 0 0; }
+.small-note { position: absolute; left: 0; right: 0; bottom: 6vh; width: fit-content; margin: auto; color: white; text-decoration: none; letter-spacing: .14em; font: 500 .72rem Arial, sans-serif; }
+.small-note:hover { color: white; text-decoration: underline; }
+@media (max-width: 767px) {
+  .story-screen { min-height: 75svh; padding-inline: .75rem; background-position: center; }
+  h1, h2 { font-size: clamp(2.6rem, 10vw, 4rem); }
+  .section-title { font-size: clamp(2.4rem, 8vw, 3.4rem); }
+  .subtitle { margin-top: 1.5rem; }
+  .small-note { bottom: 5vh; }
+}
+
